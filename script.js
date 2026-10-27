@@ -54,12 +54,12 @@ function use() {
 
 // ---------- Controls (Event Handlers) ----------
 // Runs every time the pointer goes down: a click, a tap or a pen touch.
-function pointerDown(event) {
-  Tone.start(); // browsers only allow sound after the player has pressed something
+//function pointerDown(event) {
+//Tone.start(); // browsers only allow sound after the player has pressed something
 
-  console.log("Pointer down at", event.clientX, event.clientY);
-  synth.triggerAttackRelease(note, "8n"); // play the note for an eighth note
-}
+//console.log("Pointer down at", event.clientX, event.clientY);
+//synth.triggerAttackRelease(note, "8n"); // play the note for an eighth note
+//}
 
 // ---------- Setup ----------
 // Setup is run once, at the start of the program. It sets everything up for us!
@@ -109,6 +109,35 @@ function setup() {
   shape6.setColour(200, 80, 50);
   shape6.setPosition(0.7, 0.6);
 
+  shape1.element.addEventListener("pointerdown", () => {
+    Tone.start();
+    synth.triggerAttackRelease(note1, "8n");
+  });
+
+  shape2.element.addEventListener("pointerdown", () => {
+    Tone.start();
+    synth.triggerAttackRelease(note2, "8n");
+  });
+
+  shape3.element.addEventListener("pointerdown", () => {
+    Tone.start();
+    synth.triggerAttackRelease(note3, "8n");
+  });
+
+  shape4.element.addEventListener("pointerdown", () => {
+    Tone.start();
+    synth.triggerAttackRelease(note4, "8n");
+  });
+
+  shape5.element.addEventListener("pointerdown", () => {
+    Tone.start();
+    synth.triggerAttackRelease(note5, "8n");
+  });
+
+  shape6.element.addEventListener("pointerdown", () => {
+    Tone.start();
+    synth.triggerAttackRelease(note6, "8n");
+  });
   window.addEventListener("pointerdown", pointerDown);
 }
 
