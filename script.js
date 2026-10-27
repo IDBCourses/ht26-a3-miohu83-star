@@ -74,12 +74,25 @@ function setup() {
   shape1.setColour(200, 80, 50);
   shape1.setPosition(0.5, 0.2);
 
+  shape1.element.addEventListener("pointerenter", () => {
+    shape1.setColour(337, 80, 50);
+  });
+  shape1.element.addEventListener("pointerleave", () => {
+    shape1.setColour(200, 80, 50);
+  });
   // Shape2
   const shape2 = createShape("shape2");
   shape2.setSize(120);
   shape2.setRoundedness(1);
   shape2.setColour(200, 80, 50);
   shape2.setPosition(0.4, 0.4);
+
+  shape2.element.addEventListener("pointerenter", () => {
+    shape2.setColour(49, 80, 50);
+  });
+  shape2.element.addEventListener("pointerleave", () => {
+    shape2.setColour(200, 80, 50);
+  });
 
   // Shape3
   const shape3 = createShape("shape3");
@@ -88,12 +101,26 @@ function setup() {
   shape3.setColour(200, 80, 50);
   shape3.setPosition(0.6, 0.4);
 
+  shape3.element.addEventListener("pointerenter", () => {
+    shape3.setColour(109, 80, 50);
+  });
+  shape3.element.addEventListener("pointerleave", () => {
+    shape3.setColour(200, 80, 50);
+  });
+
   // Shape4
   const shape4 = createShape("shape4");
   shape4.setSize(120);
   shape4.setRoundedness(1);
   shape4.setColour(200, 80, 50);
   shape4.setPosition(0.3, 0.6);
+
+  shape4.element.addEventListener("pointerenter", () => {
+    shape4.setColour(360, 80, 50);
+  });
+  shape4.element.addEventListener("pointerleave", () => {
+    shape4.setColour(200, 80, 50);
+  });
 
   // Shape5
   const shape5 = createShape("shape5");
@@ -102,6 +129,13 @@ function setup() {
   shape5.setColour(200, 80, 50);
   shape5.setPosition(0.5, 0.6);
 
+  shape5.element.addEventListener("pointerenter", () => {
+    shape5.setColour(253, 80, 50);
+  });
+  shape5.element.addEventListener("pointerleave", () => {
+    shape5.setColour(200, 80, 50);
+  });
+
   // Shape6
   const shape6 = createShape("shape6");
   shape6.setSize(120);
@@ -109,6 +143,14 @@ function setup() {
   shape6.setColour(200, 80, 50);
   shape6.setPosition(0.7, 0.6);
 
+  shape6.element.addEventListener("pointerenter", () => {
+    shape6.setColour(12, 80, 50);
+  });
+  shape6.element.addEventListener("pointerleave", () => {
+    shape6.setColour(200, 80, 50);
+  });
+
+  //notes
   shape1.element.addEventListener("pointerdown", () => {
     Tone.start();
     synth.triggerAttackRelease(note1, "8n");
