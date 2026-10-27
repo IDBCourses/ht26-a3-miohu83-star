@@ -26,8 +26,12 @@ import { createShape } from "./shape.js";
 // ---------- Settings ----------
 // Settings variables should contain all of the "fixed" parts of your programs
 // For example: which notes you can play, how fast things move, the tempo.
-const note = "C4"; // the note played when the pointer goes down
-
+const note1 = "C4"; // the note played when the pointer goes down
+const note2 = "D4";
+const note3 = "E4";
+const note4 = "F4";
+const note5 = "G4";
+const note6 = "A4";
 // ---------- State ----------
 // State variables are the parts of your program that change over time.
 // For example: where the pointer is, how fast it's moving, or whether a drone is on.
@@ -64,10 +68,47 @@ function setup() {
   use(); // start the use loop
 
   // Example: a shape near the middle of the window. Replace it with your own.
-  const example = createShape("example");
-  example.setPosition(0.5, 0.5);
+  const shape1 = createShape("shape1");
+  shape1.setSize(120);
+  shape1.setRoundedness(1);
+  shape1.setColour(200, 80, 50);
+  shape1.setPosition(0.5, 0.2);
 
-  // Put your event listener code here
+  // Shape2
+  const shape2 = createShape("shape2");
+  shape2.setSize(120);
+  shape2.setRoundedness(1);
+  shape2.setColour(200, 80, 50);
+  shape2.setPosition(0.4, 0.4);
+
+  // Shape3
+  const shape3 = createShape("shape3");
+  shape3.setSize(120);
+  shape3.setRoundedness(1);
+  shape3.setColour(200, 80, 50);
+  shape3.setPosition(0.6, 0.4);
+
+  // Shape4
+  const shape4 = createShape("shape4");
+  shape4.setSize(120);
+  shape4.setRoundedness(1);
+  shape4.setColour(200, 80, 50);
+  shape4.setPosition(0.3, 0.6);
+
+  // Shape5
+  const shape5 = createShape("shape5");
+  shape5.setSize(120);
+  shape5.setRoundedness(1);
+  shape5.setColour(200, 80, 50);
+  shape5.setPosition(0.5, 0.6);
+
+  // Shape6
+  const shape6 = createShape("shape6");
+  shape6.setSize(120);
+  shape6.setRoundedness(1);
+  shape6.setColour(200, 80, 50);
+  shape6.setPosition(0.7, 0.6);
+
   window.addEventListener("pointerdown", pointerDown);
 }
 
