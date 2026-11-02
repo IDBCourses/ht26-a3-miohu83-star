@@ -1,19 +1,28 @@
 # My instrument
 
-**Play it here:** <!-- Paste your GitHub Pages link here, e.g. https://idbcourses.github.io/your-repo-name/ -->
+**Play it here:** <!-- Paste your GitHub Pages link here, e.g. https://idbcourses.github.io/your-repo-name/ --> https://github.com/IDBCourses/ht26-a3-miohu83-star.git
 
-**Name:** <!-- Your name and MAU ID -->
+**Name:** <!-- Your name and MAU ID --> Qianci Hu as7836
 
-<!-- One or two sentences: what kind of instrument is it, and what is it like to play? -->
+<!-- One or two sentences: what kind of instrument is it, and what is it like to play? --> this is a pointer controlled pyramid instrument where each shape has a different musical note. It is played by clicking or moving the pointer over the shapes, with the speed of movement changing the pitch of the sustained sound.
+
+. There are six shapes with six different notes from C to A. when you click each shape they play their note. when the pointer enters each shape a continuous sound would be played and the pitch of the sound would change based on how fast you move the pointer within the shape.
 
 ## How to play
 
 <!-- Fill in the table with a row for everything the player can do with the pointer: clicking, moving slowly or fast, moving in circles, holding still... Say what happens to the sound and to the shapes. If you added keys, give them rows too. -->
 
-| When you...  | The sound...                         | The shapes... |
-| ------------ | ------------------------------------ | ------------- |
-| Click or tap | Plays a C4 (the example: replace it) | Nothing yet   |
-|              |                                      |               |
+| When you...                               | The sound...      | The shapes... |
+| ------------------ | -------------------- | --------------    | ------------- |
+| Click or tap shape 1                      | Plays a C4        | Nothing       |
+| Click or tap shape 2                      | Plays a D4        | Nothing       |
+| Click or tap shape 3                      | Plays a E4        | Nothing       |
+| Click or tap Shape 4                      | Plays a F4        | Nothing       |
+| Click or tap Shpea 5                      | Plays a G4        | Nothing       |
+| Click or tap Shape 6                      | Plays a A4        | Nothing       |
+| Pointer enter each shape                  | Continuous note   | Change colour |
+| Pointer move fast                         | Higher pitch      | Nothing       |
+| Pointer move slow                         | Orignal note pitch| Nothing       |
 
 <!-- Anything else a player needs to know: how to get started, a good thing to try first. -->
 
